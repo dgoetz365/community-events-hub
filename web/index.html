@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Community Events Hub</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to records</a>
+  <header class="masthead">
+    <a class="wordmark" href="#events">Community Events Hub</a>
+    <span class="demo-label">Fictional collective · local demo</span>
+  </header>
+  <div class="shell">
+    <aside class="rail">
+      <nav aria-label="Main navigation">
+        <a href="#events" data-nav="events">Events</a>
+        <a href="#members" data-nav="members">Members</a>
+        <a href="#timeline" data-nav="timeline">Change history</a>
+      </nav>
+      <div class="rail-note"><strong>People make the program.</strong><p>Keep every invitation, commitment and practical detail connected.</p></div>
+      <button type="button" id="refresh" class="quiet">Refresh records</button>
+      <p class="time-note">All event times are UTC.<br>Sample program: June 2030.</p>
+    </aside>
+    <main id="content" tabindex="-1">
+      <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+      <div id="view"><h1>Opening the program…</h1><p>Loading your local records.</p></div>
+    </main>
+  </div>
+</body>
+</html>
